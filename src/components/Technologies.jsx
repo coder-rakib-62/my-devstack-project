@@ -1,35 +1,35 @@
-// import { useState } from "react";
-// import { toast } from "react-toastify";
-// import TechnologyCard from "./TechnologyCard";
+import { useState } from "react";
+import { toast } from "react-toastify";
+import TechnologyCard from "./TechnologyCard";
 
-// const Alltechnology = ({ technologies }) => {
-//   const [selectedTechnologies, setSelectedTechnologies] = useState([]);
-//   const handleAddToStack = (technology) => {
-//     const alreadyExists = selectedTechnologies.some(
-//       (item) => item.id === technology.id,
-//     );
-//     if (alreadyExists) {
-//       toast.error(`${technology.technologyName} already added!`);
-//       return;
-//     }
-//     setSelectedTechnologies((previous) => [...previous, technology]);
-//     toast.success(`${technology.technologyName} added successfully!`);
-//   };
-//   const handleRemoveFromStack = (id) => {
-//     setSelectedTechnologies((previous) =>
-//       previous.filter((technology) => technology.id !== id),
-//     );
-//     toast.error("removed successfully!");
-//   };
-//   const handleClearStack = () => {
-//     if (selectedTechnologies.length === 0) {
-//       toast.error("Your stack is already empty!");
-//       return;
-//     }
-//     setSelectedTechnologies([]);
+const Alltechnology = ({ technologies }) => {
+  const [selectedTechnologies, setSelectedTechnologies] = useState([]);
+  const handleAddToStack = (technology) => {
+    const alreadyExists = selectedTechnologies.some(
+      (item) => item.id === technology.id,
+    );
+    if (alreadyExists) {
+      toast.error(`${technology.technologyName} already added!`);
+      return;
+    }
+    setSelectedTechnologies((previous) => [...previous, technology]);
+    toast.success(`${technology.technologyName} added successfully!`);
+  };
+  const handleRemoveFromStack = (id) => {
+    setSelectedTechnologies((previous) =>
+      previous.filter((technology) => technology.id !== id),
+    );
+    toast.error("removed successfully!");
+  };
+  const handleClearStack = () => {
+    if (selectedTechnologies.length === 0) {
+      toast.error("Your stack is already empty!");
+      return;
+    }
+    setSelectedTechnologies([]);
 
-//     toast.success("Your stack cleared successfully!");
-//   };
+    toast.success("Your stack cleared successfully!");
+  };
 //   return (
 //     <div className="grid grid-cols-12 container mx-auto gap-6 items-start relative">
 //       <div className="col-span-9">
@@ -58,7 +58,7 @@
 //           ))}
 //         </div>
 //       </div>
-//       <div className="col-span-3 mt-27.5">
+//       {/* <div className="col-span-3 mt-27.5">
 //         <div className="bg-white border border-slate-100 rounded-3xl p-7 shadow-sm sticky top-5">
 //           <div className="flex items-center justify-between mb-2">
 //             <h2 className="text-2xl font-bold text-slate-900">Your Stack</h2>
@@ -117,9 +117,9 @@
 //             </div>
 //           )}
 //         </div>
-//       </div>
+//       </div> */}
 //     </div>
 //   );
-// };
+};
 
-// export default Alltechnology;
+export default Alltechnology;
