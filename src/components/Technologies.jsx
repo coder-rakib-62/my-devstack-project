@@ -59,7 +59,7 @@ const Alltechnology = ({ technologies }) => {
         </div>
       </div>
 
- {/* <div className="col-span-3 mt-27.5">
+ <div className="col-span-3 mt-27.5">
          <div className="bg-white border border-slate-100 rounded-3xl p-7 shadow-sm sticky top-5">
            <div className="flex items-center justify-between mb-2">
              <h2 className="text-2xl font-bold text-slate-900">Your Stack</h2>
@@ -114,7 +114,7 @@ const Alltechnology = ({ technologies }) => {
              </div>
            )}
          </div>
-      </div>  */}
+      </div> 
      </div>
    );
   };
