@@ -1,7 +1,7 @@
 import Logo from "../assets/Logo.png";
 const Navbar = () => {
   return (    
-      <nav>
+      <nav className="sticky top-0 z-50 bg-white shadow">
         <div className="flex justify-between  container mx-auto ">
           <img src={Logo} alt="NavImage" />
           <ul className="flex gap-4 items-center">
