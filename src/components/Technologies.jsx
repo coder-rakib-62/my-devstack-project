@@ -45,7 +45,7 @@ const Alltechnology = ({ technologies }) => {
           Pick one technology per category to build your ideal stack.
         </p>
 
-        {/* <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 gap-4">
           {technologies.map((technology) => (
             <TechnologyCard
               key={technology.id}
@@ -56,7 +56,7 @@ const Alltechnology = ({ technologies }) => {
               )}
             />
           ))}
-        </div> */}
+        </div>
       </div>
 
  {/* <div className="col-span-3 mt-27.5">
