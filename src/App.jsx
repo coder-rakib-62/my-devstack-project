@@ -6,7 +6,7 @@ import Banner from '../src/components/Banner';
 import MainLayout from '../src/components/MainLayout';
 import Loading from './components/Loading';
 import { Suspense } from "react";
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 const dataPromise = async ()=>{
   const res = await fetch  ('/data.json');
@@ -22,7 +22,7 @@ function App() {
         <Suspense fallback={<Loading/>}>
           <MainLayout dataPromise={dataPromise()} />
         </Suspense>
-        {/* <Footer/> */}
+        <Footer/>
         <ToastContainer />  
     </>
   )
